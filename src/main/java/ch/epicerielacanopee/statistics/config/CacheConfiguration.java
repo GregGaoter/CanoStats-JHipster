@@ -41,6 +41,7 @@ public class CacheConfiguration {
             createCache(cm, ch.epicerielacanopee.statistics.repository.UserRepository.USERS_BY_LOGIN_CACHE);
             createCache(cm, ch.epicerielacanopee.statistics.repository.UserRepository.USERS_BY_EMAIL_CACHE);
             createCache(cm, ch.epicerielacanopee.statistics.domain.Authority.class.getName());
+            createCache(cm, ch.epicerielacanopee.statistics.domain.MouvementsStock.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

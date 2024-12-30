@@ -1,0 +1,105 @@
+{
+  "annotations": {
+    "changelogDate": "20241230204411"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "UUID"
+    },
+    {
+      "fieldName": "epicerioId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "lastUpdatedDate",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "importedDate",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "utilisateur",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "epicerioMouvement",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "mouvement",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "solde",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "vente",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "codeProduit",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "produit",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "responsableProduit",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fournisseurProduit",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "codeFournisseur",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "reduction",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "ponderation",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "venteChf",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "valeurChf",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "remarques",
+      "fieldType": "TextBlob"
+    }
+  ],
+  "name": "MouvementsStock",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

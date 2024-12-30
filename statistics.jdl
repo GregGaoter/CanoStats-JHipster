@@ -1,10 +1,3 @@
-entity User {
-  id UUID
-  username String required unique
-  password String required
-  roles String required
-}
-
 entity MouvementsStock {
   id UUID
   epicerioId Integer
