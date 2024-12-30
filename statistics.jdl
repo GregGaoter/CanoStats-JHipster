@@ -1,0 +1,33 @@
+entity User {
+  id UUID
+  username String required unique
+  password String required
+  roles String required
+}
+
+entity MouvementsStock {
+  id UUID
+  epicerioId Integer
+  createdDate Instant required
+  lastUpdatedDate Instant required
+  importedDate Instant required
+  date Instant
+  utilisateur String
+  type String
+  epicerioMouvement Float
+  mouvement Float
+  solde Float
+  vente String
+  codeProduit String
+  produit String
+  responsableProduit String
+  fournisseurProduit String
+  codeFournisseur String
+  reduction Float
+  ponderation Float
+  venteChf Float
+  valeurChf Float
+  remarques TextBlob
+}
+
+use mapstruct, pagination, filter for *

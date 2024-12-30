@@ -1,0 +1,3 @@
+org.springframework.test.context.ContextCustomizerFactory = ch.\
+    epicerielacanopee.statistics.config.\
+    SqlTestContainersSpringContextCustomizerFactory
