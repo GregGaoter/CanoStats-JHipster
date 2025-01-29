@@ -174,6 +174,9 @@ export const MouvementsStock = () => {
                 <th className="hand" onClick={sort('remarques')}>
                   Remarques <FontAwesomeIcon icon={getSortIconByFieldName('remarques')} />
                 </th>
+                <th className="hand" onClick={sort('active')}>
+                  Active <FontAwesomeIcon icon={getSortIconByFieldName('active')} />
+                </th>
                 <th />
               </tr>
             </thead>
@@ -218,6 +221,7 @@ export const MouvementsStock = () => {
                   <td>{mouvementsStock.venteChf}</td>
                   <td>{mouvementsStock.valeurChf}</td>
                   <td>{mouvementsStock.remarques}</td>
+                  <td>{mouvementsStock.active ? 'true' : 'false'}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">
                       <Button

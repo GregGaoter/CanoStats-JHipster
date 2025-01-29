@@ -88,6 +88,10 @@ public class MouvementsStock implements Serializable {
     @Column(name = "remarques")
     private String remarques;
 
+    @NotNull
+    @Column(name = "active", nullable = false)
+    private Boolean active;
+
     // jhipster-needle-entity-add-field - JHipster will add fields here
 
     public UUID getId() {
@@ -376,6 +380,19 @@ public class MouvementsStock implements Serializable {
         this.remarques = remarques;
     }
 
+    public Boolean getActive() {
+        return this.active;
+    }
+
+    public MouvementsStock active(Boolean active) {
+        this.setActive(active);
+        return this;
+    }
+
+    public void setActive(Boolean active) {
+        this.active = active;
+    }
+
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here
 
     @Override
@@ -421,6 +438,7 @@ public class MouvementsStock implements Serializable {
             ", venteChf=" + getVenteChf() +
             ", valeurChf=" + getValeurChf() +
             ", remarques='" + getRemarques() + "'" +
+            ", active='" + getActive() + "'" +
             "}";
     }
 }

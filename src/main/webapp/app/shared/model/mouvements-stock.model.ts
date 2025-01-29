@@ -23,6 +23,9 @@ export interface IMouvementsStock {
   venteChf?: number | null;
   valeurChf?: number | null;
   remarques?: string | null;
+  active?: boolean;
 }
 
-export const defaultValue: Readonly<IMouvementsStock> = {};
+export const defaultValue: Readonly<IMouvementsStock> = {
+  active: false,
+};

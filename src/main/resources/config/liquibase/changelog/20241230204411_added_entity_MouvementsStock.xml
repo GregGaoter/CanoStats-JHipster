@@ -77,6 +77,9 @@
             <column name="remarques" type="${clobType}">
                 <constraints nullable="true" />
             </column>
+            <column name="active" type="boolean">
+                <constraints nullable="false" />
+            </column>
             <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
         </createTable>
         <dropDefaultValue tableName="mouvements_stock" columnName="created_date" columnDataType="${datetimeType}"/>
@@ -123,6 +126,7 @@
             <column name="vente_chf" type="numeric"/>
             <column name="valeur_chf" type="numeric"/>
             <column name="remarques" type="clob"/>
+            <column name="active" type="boolean"/>
             <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
         </loadData>
     </changeSet>
