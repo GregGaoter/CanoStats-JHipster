@@ -24,4 +24,5 @@ entity MouvementsStock {
   active Boolean required
 }
 
-use mapstruct, pagination, filter for *
+use mapstruct, pagination for *
+filter MouvementsStock
