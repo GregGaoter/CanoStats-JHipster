@@ -1821,15 +1821,14 @@ class MouvementsStockResourceIT {
         partialUpdatedMouvementsStock.setId(mouvementsStock.getId());
 
         partialUpdatedMouvementsStock
-            .epicerioId(UPDATED_EPICERIO_ID)
-            .lastUpdatedDate(UPDATED_LAST_UPDATED_DATE)
+            .createdDate(UPDATED_CREATED_DATE)
+            .importedDate(UPDATED_IMPORTED_DATE)
+            .date(UPDATED_DATE)
             .utilisateur(UPDATED_UTILISATEUR)
-            .codeProduit(UPDATED_CODE_PRODUIT)
-            .produit(UPDATED_PRODUIT)
-            .responsableProduit(UPDATED_RESPONSABLE_PRODUIT)
-            .fournisseurProduit(UPDATED_FOURNISSEUR_PRODUIT)
-            .codeFournisseur(UPDATED_CODE_FOURNISSEUR)
-            .venteChf(UPDATED_VENTE_CHF)
+            .type(UPDATED_TYPE)
+            .epicerioMouvement(UPDATED_EPICERIO_MOUVEMENT)
+            .mouvement(UPDATED_MOUVEMENT)
+            .vente(UPDATED_VENTE)
             .remarques(UPDATED_REMARQUES);
 
         restMouvementsStockMockMvc
